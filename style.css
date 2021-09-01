@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+section{
+    width: 90%;
+    height: 80%;
+    margin: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-1{
+    width: 70%;
+}
+
+.main-2{
+    width: 20%;
+}
+
+.spilt{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+section,
+.main-1,
+.spilt{
+    gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    section{
+        flex-direction: column;
+        margin: 5%;
+    }
+
+    .spilt{
+        flex-direction: column;
+    }
+
+    .main-1,
+    .main-2{
+        width: 100%;
+    }
+}
+
+img{
+    border-radius: 50%;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.h-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.name{
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.quote-h{
+    font-weight: normal;
+    font-size: 1em;
+    color: hsl(0, 0%, 84%); 
+}
+
+.text{
+    font-size: 1.25em;
+    font-weight: 600;
+    padding-block: 0.6em;
+}
+
+.quote{
+    font-size: 1.25em;
+    font-weight: 100;
+    padding-block: 1em;
+}
+
+.purple{
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+}
+
+.grey{
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+.black{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+.white{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 18%, 39%);
+}
+
+.purple,
+.grey,
+.black,
+.white{
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px hsla(217, 19%, 35%, 0.603);
+    padding: 25px;
+}
